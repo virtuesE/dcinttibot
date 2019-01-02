@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 const bot = new Commando.Client();    
-const BOT_TOKEN = 'NTMwMDAwODcwNjQ1OTU2NjIy.Dw5ClQ.MNoEXTC2Et5Ca9G8oFndByvsqxs'
+const TOKEN = 'NTMwMDAwODcwNjQ1OTU2NjIy.Dw5ClQ.MNoEXTC2Et5Ca9G8oFndByvsqxs'
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerDefaults();
@@ -25,4 +25,4 @@ bot.on('ready',function(){
     console.log("Ready");
 })
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(process.env.TOKEN);
